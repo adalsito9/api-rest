@@ -1,9 +1,8 @@
 //Crea el server de esta api
-const express = require('express');
+const CONFIG = require('./app/config/configuracion');
+const app = require('./app/app');
 
-const app = express();
-const port = 3000;
 
-app.listen(port, () => {
-  console.log('Aplicacion corriendo en el puerto ' + port); 
+app.listen(CONFIG.PORT, () => {
+  console.log('Aplicacion corriendo en el puerto ' + CONFIG.PORT);
 });
