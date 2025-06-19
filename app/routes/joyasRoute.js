@@ -2,9 +2,10 @@ const express = require('express');
 const router = express.Router();
 
 router.get('/anillo', (req, res) => {
-  res.json({ message: 'Hola mundo' 
+  res.json({ message: 'Hola' 
   });
 });
+
 
 
 module.exports = router;
