@@ -1,10 +1,11 @@
 const express = require('express');
 const router = express.Router();
 
-router.get('/anillo', (req, res) => {
-  res.json({ message: 'Hola' 
-  });
-});
+const joyasController = require('../controllers/joyasController');
+
+
+
+router.get('/', joyasController.buscarTodo);
 
 
 
